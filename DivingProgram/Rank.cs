@@ -8,14 +8,14 @@ namespace DivingProgram
 {
     internal class Rank
     {
-        string RankName;
+        string rankName;
         int numOfDives;
         DivingClub club;
         DateTime dateOfRecipt;
 
-        public Rank(string RankName, int numOfDives, DivingClub club, DateTime dateOfRecipt)
+        public Rank(string rankName, int numOfDives, DivingClub club, DateTime dateOfRecipt)
         {
-            this.RankName = RankName;
+            this.RankName = rankName;
             this.numOfDives = numOfDives;
             this.club = club;
             this.dateOfRecipt = dateOfRecipt;
