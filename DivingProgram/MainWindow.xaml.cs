@@ -20,10 +20,21 @@ namespace DivingProgram
         {
             InitializeComponent();
         }
-
+        
         private void Register(object sender, RoutedEventArgs e)
         {
+            Window register = new RegisterWindow();
+            register.Show();
+        }
 
+        private void BtnCloseProgrem(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void BtnLogin(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }
