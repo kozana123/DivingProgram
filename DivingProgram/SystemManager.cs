@@ -17,11 +17,15 @@ namespace DivingProgram
 
         public void AddDiver(Diver diver)
         {
-            if (dictOfDiversUsers.ContainsKey(diver.Email))
+            if (!dictOfDiversUsers.ContainsKey(diver.Email))
             {
-                return false; 
+                dictOfDiversUsers.Add(diver.Email, diver);
+                MessageBox.Show("Diver successfully registered!");
             }
-            dictOfDiversUsers.Add(diver.Email, diver);
+            else
+            {
+                MessageBox.Show("Diver with this email already exists!");
+            }
         }
 
     }

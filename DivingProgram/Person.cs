@@ -10,15 +10,14 @@ namespace DivingProgram
     {
         private string firstName;
         private string lastName;
-        private string email;
+        public string Email {get; set;}
         private string password;
         private DateTime birthDate;
 
-        public Person (string firatName, string lastName, string email, string password, DateTime birthDate)
+        public Person (string firatName, string lastName, string password, DateTime birthDate)
         {
             this.firstName = firatName;
             this.lastName = lastName;
-            this.email = email;
             this.password = password;
             this.birthDate = birthDate;
         }

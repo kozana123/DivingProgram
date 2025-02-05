@@ -32,42 +32,41 @@ namespace DivingProgram
         private void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
 
-            string firstName = firstName.Text;
-            string lastName = lastName.Text;
-            string email = email.Text;
-            string password = password.Text;
-            DateTime birthDay = birthDayPicker.SelectedDate;
+            string uFirstName = firstName.Text;
+            string uLastName = lastName.Text;
+            string uEmail = email.Text;
+            string uPassword = password.Text;
+            DateTime uBirthDay = userBirthDay.SelectedDate.Value;
 
-            if (firstName == "" || lastName == "" || email == "" || password == "" || birthDay == null)
+            if (uFirstName == "" || uLastName == "" || uEmail == "" || uPassword == "" || uBirthDay == null)
             {
                 MessageBox.Show("Please fill all fields!");
                 return;
             }
 
-            if (!Regex.IsMatch(email, EMAIL_REGEX))
+            if (!Regex.IsMatch(uEmail, EMAIL_REGEX))
             {
                 MessageBox.Show("Invalid email format!");
                 return;
             }
 
-            if (!Regex.IsMatch(password, PASSWORD_REGEX))
+            if (!Regex.IsMatch(uPassword, PASSWORD_REGEX))
             {
                 MessageBox.Show("Password must contain at least 8 characters, one uppercase letter, one lowercase letter, one number and one special character!");
                 return;
             }
 
-            if (birthDay > DateTime.Now)
+            if (uBirthDay > DateTime.Now)
             {
                 MessageBox.Show("Invalid birth date!");
                 return;
             }
 
-            Diver diver = new Diver(firstName, lastName, email, password, birthDay);
-            if (!systemManager.AddDiver(diver))
-            {
-                MessageBox.Show("A user with this email already exists!");
-                return;
-            }
+            Random random = new Random();
+            int uniqeId = random.Next(1000, 9999);
+            Diver diver = new Diver(uFirstName, uLastName, uPassword, uBirthDay, uniqeId);
+            SystemManager userDiver = new SystemManager();
+            userDiver.AddDiver(diver);
 
             MessageBox.Show("You have successfully registered!");
             MainWindow mainWindow = new MainWindow();
