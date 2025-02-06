@@ -9,7 +9,7 @@
     <Grid>
         <TextBox x:Name="email" HorizontalAlignment="Left" Margin="309,239,0,0" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="lastName" HorizontalAlignment="Left" Margin="309,155,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="firstName" HorizontalAlignment="Left" Margin="309,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="firstName_TextChanged"/>
+        <TextBox x:Name="firstName" HorizontalAlignment="Left" Margin="309,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
         <DatePicker x:Name="userBirthDate" HorizontalAlignment="Left" Margin="309,193,0,0" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="224,121,0,0" TextWrapping="Wrap" Text="First Name:" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="224,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="en-gb" Text="Last Name:"/></TextBlock>
@@ -17,7 +17,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="224,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Language="en-gb" Text="Email:"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="224,280,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.653,0.754"><Run Language="en-gb" Text="Password:"/></TextBlock>
         <PasswordBox x:Name="password" HorizontalAlignment="Left" Margin="309,279,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="340,327,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="340,327,0,0" VerticalAlignment="Top" Click="RegisterButton_Click"/>
 
     </Grid>
 </Window>

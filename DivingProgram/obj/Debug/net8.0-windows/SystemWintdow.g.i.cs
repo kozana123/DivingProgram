@@ -53,7 +53,7 @@ namespace DivingProgram {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/DivingProgram;V1.0.0.0;component/systemwintdow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/DivingProgram;component/systemwintdow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\SystemWintdow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

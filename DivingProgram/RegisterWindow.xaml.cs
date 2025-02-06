@@ -27,7 +27,7 @@ namespace DivingProgram
         }
 
         private const string EMAIL_REGEX = @"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$";
-        private const string PASSWORD_REGEX = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{8}$";
+        private const string PASSWORD_REGEX = @"^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{8,}$";
 
         private void RegisterButton_Click(object sender, RoutedEventArgs e)
         {
@@ -35,8 +35,8 @@ namespace DivingProgram
             string uFirstName = firstName.Text;
             string uLastName = lastName.Text;
             string uEmail = email.Text;
-            string uPassword = password.Text;
-            DateTime uBirthDay = userBirthDay.SelectedDate.Value;
+            string uPassword = password.Password;
+            DateTime uBirthDay = userBirthDate.SelectedDate.Value;
 
             if (uFirstName == "" || uLastName == "" || uEmail == "" || uPassword == "" || uBirthDay == null)
             {
@@ -64,13 +64,12 @@ namespace DivingProgram
 
             Random random = new Random();
             int uniqeId = random.Next(1000, 9999);
-            Diver diver = new Diver(uFirstName, uLastName, uPassword, uBirthDay, uniqeId);
+            Diver diver = new Diver(uFirstName, uLastName,uEmail, uPassword, uBirthDay, uniqeId);
             SystemManager userDiver = new SystemManager();
             userDiver.AddDiver(diver);
 
             MessageBox.Show("You have successfully registered!");
             MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
             this.Close();
 
         }

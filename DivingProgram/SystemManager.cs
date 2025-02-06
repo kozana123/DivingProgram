@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace DivingProgram
 {
@@ -17,9 +18,9 @@ namespace DivingProgram
 
         public void AddDiver(Diver diver)
         {
-            if (!dictOfDiversUsers.ContainsKey(diver.Email))
+            if (!dictOfDiversUsers.ContainsKey(diver.email))
             {
-                dictOfDiversUsers.Add(diver.Email, diver);
+                dictOfDiversUsers.Add(diver.email, diver);
                 MessageBox.Show("Diver successfully registered!");
             }
             else

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DivingProgram
 {
-        public internal class Diver: Person
+    internal class Diver: Person
     {
         private int diverIdNumber;
         private List<DivingSession> divingSession;
