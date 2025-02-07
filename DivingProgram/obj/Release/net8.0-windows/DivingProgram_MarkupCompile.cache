@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-C:\Users\elish\OneDrive\Desktop\DOR SHAY\DivingProgram\DivingProgram\obj\Debug\net8.0-windows\
+C:\Users\elish\OneDrive\Desktop\DOR SHAY\DivingProgram\DivingProgram\obj\Release\net8.0-windows\
 DivingProgram
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+TRACE;RELEASE;NET;NET8_0;NETCOREAPP
 C:\Users\elish\OneDrive\Desktop\DOR SHAY\DivingProgram\DivingProgram\App.xaml
 3-963284612
 
-162091706831
+16930244488
 198-352714763
 MainWindow.xaml;RegisterWindow.xaml;SystemWintdow.xaml;
 
