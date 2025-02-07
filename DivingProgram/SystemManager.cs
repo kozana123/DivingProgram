@@ -9,13 +9,19 @@ namespace DivingProgram
 {
     internal class SystemManager
     {
-        private Dictionary<string, Diver> dictOfDiversUsers = new Dictionary<string, Diver>();
+        private static Dictionary<string, Diver> dictOfDiversUsers;
+        
 
+        
         public SystemManager()
         {
-            dictOfDiversUsers = new Dictionary<string, Diver>();
+            if(dictOfDiversUsers is null)
+            {
+                dictOfDiversUsers = new Dictionary<string, Diver>();
+            }
         }
 
+        
         public void AddDiver(Diver diver)
         {
             if (!dictOfDiversUsers.ContainsKey(diver.email))
@@ -28,6 +34,20 @@ namespace DivingProgram
                 MessageBox.Show("Diver with this email already exists!");
             }
         }
+
+
+        public bool Login(string email, string password)
+        {
+            //dictOfDiversUsers.TryGetValue(email, out Diver diver);
+            //MessageBox.Show(diver.email);
+
+            if (dictOfDiversUsers.TryGetValue(email, out Diver diver))
+            {
+                return diver.VerifyPassword(password);
+            }
+            return false;
+        }
+
 
     }
 }

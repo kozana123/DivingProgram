@@ -65,11 +65,9 @@ namespace DivingProgram
             Random random = new Random();
             int uniqeId = random.Next(1000, 9999);
             Diver diver = new Diver(uFirstName, uLastName,uEmail, uPassword, uBirthDay, uniqeId);
-            SystemManager userDiver = new SystemManager();
-            userDiver.AddDiver(diver);
-
-            MessageBox.Show("You have successfully registered!");
-            MainWindow mainWindow = new MainWindow();
+            SystemManager systemManager = new SystemManager();
+            systemManager.AddDiver(diver);
+            //MessageBox.Show("You have successfully registered!");
             this.Close();
 
         }

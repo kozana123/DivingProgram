@@ -8,11 +8,11 @@ namespace DivingProgram
 {
     internal class Person
     {
-        private string firstName;
-        private string lastName;
+        protected string firstName;
+        protected string lastName;
         public string email {get; set;}
-        private string password;
-        private DateTime birthDate;
+        protected string password;
+        protected DateTime birthDate;
 
         public Person (string firatName, string lastName, string email, string password, DateTime birthDate)
         {
@@ -23,6 +23,7 @@ namespace DivingProgram
             this.birthDate = birthDate;
         }
 
+        public string GetFirstName() {  return firstName; }
     
 
 

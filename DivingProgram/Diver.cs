@@ -22,7 +22,15 @@ namespace DivingProgram
             this.divingSession = divingSession;
             this.rank = rank;
         }
-        
-        
+
+
+        public bool VerifyPassword(string inputPassword)
+        {
+            return password == inputPassword;
+        }
+
+
+
+
     }
 }

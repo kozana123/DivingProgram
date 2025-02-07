@@ -7,16 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="730" Width="1370">
     <Grid>
-        <TextBlock x:Name="userEmail" HorizontalAlignment="Left" Margin="502,252,0,0" TextWrapping="Wrap" Text="Email:" VerticalAlignment="Top" FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" Margin="633,250,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="246" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="502,252,0,0" TextWrapping="Wrap" Text="Email:" VerticalAlignment="Top" FontSize="20"/>
+        <TextBox x:Name="userEmail" HorizontalAlignment="Left" Margin="633,250,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="246" FontSize="20"/>
         <Label Content="Welcome to OceanDive System" HorizontalAlignment="Center" Margin="0,124,0,0" VerticalAlignment="Top" FontSize="30" FontWeight="Bold"/>
-        <TextBlock x:Name="userPassword" HorizontalAlignment="Left" Margin="502,330,0,0" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top" FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" Margin="633,328,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="246" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="502,330,0,0" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top" FontSize="20"/>
         <Button Content="Sign In" HorizontalAlignment="Center" Margin="0,434,0,0" VerticalAlignment="Top" Height="50" Width="134" FontSize="20" Click="BtnLogin"/>
         <Button Content="X" HorizontalAlignment="Left" Margin="46,37,0,0" VerticalAlignment="Top" FontSize="30" Width="42" Click="BtnCloseProgrem"/>
         <TextBlock HorizontalAlignment="Center" Margin="0,395,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top">
             <Hyperlink Click="Register" FontSize="17">Register Now</Hyperlink>
         </TextBlock>
+        <PasswordBox x:Name="userPassword" HorizontalAlignment="Left" Margin="633,328,0,0" VerticalAlignment="Top" Width="246" FontSize="20"/>
 
 
 
