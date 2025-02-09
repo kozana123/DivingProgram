@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DivingProgram")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8fca2771b9c9594c65ecb001045e955d24885115")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0514858ceeee5ac620c1aab1dfca1a6204963aa3")]
 [assembly: System.Reflection.AssemblyProductAttribute("DivingProgram")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DivingProgram")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
